@@ -74,7 +74,7 @@ app.post('/chat', async (req, res) => {
   });
 });
 
-app.listen(port, () => {
+app.listen(port,'0.0.0.0', () => {
   console.log(`🚀 Serveur Backend en cours d'exécution sur le port ${port}`);
   if (process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY !== 'test_key') {
     console.log("🌟 Clé OpenAI détectée : Le mode VRAI ChatGPT est ACTIF !");
