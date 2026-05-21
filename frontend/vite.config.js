@@ -10,6 +10,7 @@ export default defineConfig({
     proxy: {
       '/api':  {
         target: 'http://chat-api:3000', // ← nom du service Docker
+        changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       }
     }
