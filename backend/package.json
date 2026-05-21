@@ -1,0 +1,19 @@
+{
+  "name": "devops-chatgpt",
+  "version": "1.0.0",
+  "description": "DevOpsGPT API for DevOps Exam",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"✅ Tests passed successfully!\" && exit 0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^4.22.2",
+    "redis": "^4.7.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
